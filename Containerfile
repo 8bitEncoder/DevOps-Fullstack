@@ -1,4 +1,4 @@
-FROM node:17-alpine
+FROM node:20-alpine
 
 
 WORKDIR /app
@@ -7,4 +7,7 @@ WORKDIR /app
 COPY index.js .
 
 
-RUN["node", "index.js"]
+EXPOSE 5020
+
+
+CMD ["node", "index.js"]
