@@ -4,5 +4,6 @@ on:
 jobs:
   hello:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
+      - uses: actions/checkout@v4 
       - run: echo "hello from cicd"
